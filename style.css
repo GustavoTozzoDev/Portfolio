@@ -205,11 +205,13 @@ a:hover {
     width: 50%;
 }
 
+
+
 .card {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    margin: 3rem 0 0 0;
+    margin: 3rem 0 3rem 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,9 +229,10 @@ a:hover {
 .card-text {
     width: 55%;
     letter-spacing: 1px;
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+    
 }
-
 
 
 .card-wrapper {
@@ -241,6 +244,7 @@ a:hover {
     position: relative;
 }
 
+
 .card-wrapper::before {
     content: '';
     position: absolute;
@@ -251,23 +255,34 @@ a:hover {
     border: 1px solid #ffffff ;
     opacity: 0;
     transition: 0.5s ease-in-out;
+    
 }
 
 .card-wrapper h2 {
-    font-size: 25px;
+    font-size: 17px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     margin: 0;
     transition: 0.5s ease-in-out;
 }
 
-.card-wrapper p {
+.card-wrapper h2::before {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+
+.card-wrapper img {
     font-size: 0;
     visibility: hidden;
     opacity: 0;
     font-weight: bold;
-    text-transform: uppercase;
     transition: 0.5s ease-in-out;
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
 }
 
 .card:hover {
@@ -280,7 +295,7 @@ a:hover {
     opacity: 1;
 }
 
-.card:hover > .card-wrapper p {
+.card:hover > .card-wrapper img {
     opacity: 1;
     visibility: visible;
     font-size: 14px;
