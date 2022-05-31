@@ -313,4 +313,40 @@ a:hover {
     color: #00ff88;
 }
 
+@media only screen and (max-width: 600px) {
+    .header-container { 
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        width: 70vw;
+    }
+
+    .social-media {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .header-container {
+        width: 100vw;
+        height: 70vh;
+        background-image: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+   h2 {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+}
 
